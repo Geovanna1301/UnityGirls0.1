@@ -1,10 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
+  background-color: #fff0ff;
 }
 
 .navbar {
-  background-color: #ff0095;
+  background-color: #b57edc;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -16,7 +16,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 60px;
+  width: 60px;
   margin-right: 10px;
   font-weight: bold;
 }
@@ -26,7 +27,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc3e1 !important;
+  color: #771eb3 !important;
 }
 
 .navbar .search-bar {
@@ -42,13 +43,13 @@ body {
 
 .navbar .form-control:focus {
   outline: none;
-  border-color: #ffc3e1;
+  border-color: #fca7fc;
   box-shadow: 0px 0px 5px rgba(255, 195, 225, 0.7);
 }
 
 .navbar .btn-search {
-  background-color: #ffc3e1;
-  color: #d63384;
+  background-color: #771eb3;
+  color: #ffffff;
   border-radius: 30px;
   padding: 5px 15px;
   border: none;
@@ -56,14 +57,15 @@ body {
 }
 
 .navbar .btn-search:hover {
-  background-color: #d63384;
+  background-color: #fa9afd;
+  border-color: #cf42fa;
   color: white;
 }
 
 .hero {
   text-align: center;
   padding: 70px 20px;
-  background: linear-gradient(135deg, #ff7eb9, #ff758c);
+  background: linear-gradient(135deg, #a503a5, #a503a5);
   color: white;
   border-radius: 0 0 50% 50% / 10%;
 }
@@ -80,18 +82,20 @@ body {
 
 .cta-button {
   background-color: #fff;
-  color: #d63384;
+  color: #580658;
   padding: 10px 20px;
   border-radius: 30px;
-  border: 2px solid #d63384;
+  border: 2px solid #cf42fa;
   transition: 0.3s ease;
   text-decoration: none;
   text-align: center;
 }
 
 .cta-button:hover {
-  background-color: #d63384;
-  color: white;
+  
+  border-color: #c79be4;
+  background: #c79be4;
+  border-color: #cf42fa;
 }
 
 .grid-section {
@@ -105,28 +109,13 @@ body {
   margin-bottom: 40px;
 }
 
-.card {
-  border: none;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  border-radius: 10px;
-}
-
 .card iframe {
   border-radius: 10px;
 }
 
 .footer {
   width: 100%;
-  background-color: #d63384;
+  background-color: #b57edc;
   color: white;
   text-align: center;
   padding: 20px;
@@ -155,27 +144,58 @@ body {
 
 .grid-section .acao {
   text-align: center;
-  color: #d63384;
+  color: #771eb3;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
 .grid-section h2 {
+  text-align: center;
+  color: #771eb3;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 50px;
+}
+
+.grid-section h4 {
   text-align: left;
-  color: #d63384;
+  color: #771eb3;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.grid-section {
+  text-align: center;
+  color: #771eb3;
   font-weight: 600;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
-.titulo {
+
+.grid-section h3 {
   text-align: left;
-  color: #d63384;
+  color: #771eb3;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.titulo {
+
+  margin-top: 170px;
+  color: #771eb3;
   font-weight: bold;
+
+
 }
 
 .form-container {
-  background: #ffffff;
+  background: #ffc9ff;
   padding: 40px 60px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -212,7 +232,7 @@ textarea {
 .buton {
   width: 100%;
   padding: 10px;
-  background-color: #d63384;
+  background-color: rgb(75, 28, 113);
   color: white;
   border: none;
   border-radius: 5px;
@@ -222,5 +242,45 @@ textarea {
 }
 
 .buton:hover {
-  background-color: #ff7eb9;
+  background: #c79be4;
+  border-color: #cf42fa;
+}
+
+
+.card {
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-radius: 10px;
+  object-fit: cover; 
+  height: 200px; 
+}
+
+.card-body {
+  flex-grow: 1; 
+}
+
+.cta-button {
+  align-self: center;
+}
+
+.grid-section .row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.grid-section .col-md-3 {
+  display: flex;
+  justify-content: space-between;
 }
