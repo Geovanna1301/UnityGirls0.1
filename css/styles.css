@@ -92,7 +92,7 @@ body {
 }
 
 .cta-button:hover {
-  
+
   border-color: #c79be4;
   background: #c79be4;
   border-color: #cf42fa;
@@ -162,7 +162,7 @@ body {
   text-align: left;
   color: #771eb3;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   margin-top: 40px;
   font-size: 20px;
 }
@@ -217,7 +217,8 @@ label {
   color: #555555;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #cccccc;
@@ -253,7 +254,7 @@ textarea {
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  height: 100%;
 }
 
 .card:hover {
@@ -263,12 +264,12 @@ textarea {
 
 .card img {
   border-radius: 10px;
-  object-fit: cover; 
-  height: 200px; 
+  object-fit: cover;
+  height: 250px;
 }
 
 .card-body {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .cta-button {
@@ -277,7 +278,7 @@ textarea {
 
 .grid-section .row {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .grid-section .col-md-3 {
@@ -285,11 +286,11 @@ textarea {
   justify-content: space-between;
 }
 
-#social-container{
+#social-container {
   margin: 20px auto;
 }
 
-#social-container i{
+#social-container i {
   font-size: 1.5em;
   margin: 10px;
   cursor: pointer;
@@ -297,6 +298,6 @@ textarea {
   transition: 0.3s;
 }
 
-#social-container i:hover{
+#social-container i:hover {
   color: #8930ee;
 }
