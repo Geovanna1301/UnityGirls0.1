@@ -284,3 +284,19 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
+
+#social-container{
+  margin: 20px auto;
+}
+
+#social-container i{
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+#social-container i:hover{
+  color: #8930ee;
+}
